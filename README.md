@@ -1,22 +1,20 @@
-Netgen open source project skeleton
-===================================
-    
-[![Build Status](https://img.shields.io/travis/netgen/MyNewFavoriteBundle.svg?style=flat-square)](https://travis-ci.org/netgen/MyNewFavoriteBundle)
-[![Code Coverage](https://img.shields.io/codecov/c/github/netgen/MyNewFavoriteBundle.svg?style=flat-square)](https://codecov.io/gh/netgen/MyNewFavoriteBundle)
-[![Quality Score](https://img.shields.io/scrutinizer/g/netgen/MyNewFavoriteBundle.svg?style=flat-square)](https://scrutinizer-ci.com/g/netgen/MyNewFavoriteBundle)
-[![Downloads](https://img.shields.io/packagist/dt/netgen/my-new-favorite-bundle.svg?style=flat-square)](https://packagist.org/packages/netgen/my-new-favorite-bundle/stats)
-[![Latest stable](https://img.shields.io/packagist/v/netgen/my-new-favorite-bundle.svg?style=flat-square)](https://packagist.org/packages/netgen/my-new-favorite-bundle)
-[![License](https://img.shields.io/packagist/l/netgen/my-new-favorite-bundle.svg?style=flat-square)](LICENSE)
+Netgen Open Source skeleton
+===========================
 
-Work in progress... 
+# Table of contents
+1. [Introduction](#introduction)
+2. [Some paragraph](#paragraph1)
+    1. [Sub paragraph](#subparagraph1)
+3. [Another paragraph](#paragraph2)
 
-License, docs and installation instructions
--------------------------------------------
+## This is the introduction <a name="introduction"></a>
+Some introduction text, formatted in heading 2 style
 
-[License](LICENSE)
+## Some paragraph <a name="paragraph1"></a>
+The first paragraph text
 
-[Installation instructions](doc/INSTALL.md)
+### Sub paragraph <a name="subparagraph1"></a>
+This is a sub paragraph, formatted in heading 3 style
 
-[Documentation](doc/DOC.md)
-
-[Changelog](doc/CHANGELOG.md)
+## Another paragraph <a name="paragraph2"></a>
+The second paragraph text
