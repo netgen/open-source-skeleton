@@ -1,3 +1,7 @@
+dist: trusty
+# we don't need sudo
+sudo: false
+
 language: php
 
 # directories to cache
@@ -24,7 +28,7 @@ before_install:
 
 # install dependencies
 install:
-    - travis_wait composer install
+    - composer install
 
 # execute phpunit as the script command
 script:
@@ -37,9 +41,6 @@ notification:
 # reduce depth (history) of git checkout
 git:
   depth: 30
-
-# we don't need sudo
-sudo: false
 
 # enable scrutinizer
 after_script:
