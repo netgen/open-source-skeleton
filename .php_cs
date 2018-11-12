@@ -46,7 +46,7 @@ return PhpCsFixer\Config::create()
     ])
     ->setFinder(
         PhpCsFixer\Finder::create()
-            ->exclude(['vendor', 'node_modules', 'doc', 'build'])
+            ->exclude(['vendor', 'node_modules', 'doc'])
             ->in(__DIR__)
     )
 ;

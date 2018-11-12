@@ -4,18 +4,17 @@ Installation instructions
 Requirements
 ------------
 
-* eZ Platform 1.0+
-* eZ Publish 5
+* eZ Platform 2.0+
 
 Installation steps
 ------------------
 
 ### Use Composer
 
-Run the following from your website root folder to install NetgenInformationCollectionBundle:
+Run the following from your website root folder to install the package:
 
 ```bash
-$ composer require netgen/information-collection-bundle
+$ composer require netgen/my-demo-bundle
 ```
 
 ### Activate the bundle
@@ -26,8 +25,7 @@ Activate required bundles in `app/AppKernel.php` file by adding them to the `$bu
 public function registerBundles()
 {
     ...
-    $bundles[] = new Netgen\Bundle\EzFormsBundle\NetgenEzFormsBundle();
-    $bundles[] = new Netgen\Bundle\InformationCollectionBundle\NetgenInformationCollectionBundle();
+    $bundles[] = new Netgen\Bundle\MyExampleBundle\NetgenMyExampleBundle();
 
     return $bundles;
 }
@@ -36,10 +34,10 @@ public function registerBundles()
 
 ### Clear the caches
 
-Clear the eZ Publish caches with the following command:
+Clear the eZ Platform caches with the following command:
 
 ```bash
-$ php app/console cache:clear
+$ php bin/console cache:clear
 ```
 
 For more detailed configuration, please check [documentation](DOC.md).
