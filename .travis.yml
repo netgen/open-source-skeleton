@@ -7,8 +7,7 @@ language: php
 # directories to cache
 cache:
     directories:
-        - vendor
-        - $HOME/.composer/cache
+        - $HOME/.composer
 
 matrix:
     # mark as finished before allow_failures are run
@@ -40,7 +39,7 @@ notification:
 
 # reduce depth (history) of git checkout
 git:
-  depth: 30
+  depth: 1
 
 # enable scrutinizer
 after_script:
@@ -49,3 +48,13 @@ after_script:
 # send coverage to codecov.io
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+
+# Slack notifications
+#notifications:
+#  email: false
+#  slack:
+#    rooms:
+#    - secure: "YOUR SLACK TOKEN HERE"
+#    on_success: change
+#    on_failure: always
+#    on_pull_requests: false
