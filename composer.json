@@ -39,9 +39,9 @@
         }
     },
     "scripts": {
-        "analyse": "@php vendor/bin/phpstan analyse -l 7 bundle",
+        "phpstan": "@php vendor/bin/phpstan analyse --level=7 --ansi bundle",
         "test": "@php vendor/bin/phpunit -c phpunit.xml --colors=always",
-        "fix": "@php vendor/bin/php-cs-fixer fix",
+        "fix-cs": "@php vendor/bin/php-cs-fixer fix",
         "coverage": "@php -dzend_extension=xdebug.so vendor/bin/phpunit -c phpunit.xml --colors=always --coverage-clover=coverage.xml"
     },
     "extra": {
